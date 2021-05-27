@@ -85,3 +85,102 @@ body {
 
 
 //Navbar end
+
+
+
+
+// footer section
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    .header{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .company {
+        padding-top: 35px;
+        
+        ul {
+            padding: 0px;
+            margin: 20px;
+            list-style-type: none;
+            li {
+                padding: 10px 40px;
+                a {
+                    text-decoration: none;
+                    color: rgb(206, 206, 206);
+                    transition: 1s;
+                    padding: 10px 40px;
+                    &:hover {
+                        background-color: #BD491F;
+                    }
+                }
+            } // li end
+        } // ul end
+    } // company end
+
+    .newsletter {
+        input {
+            margin-top: 40px;
+            border: none;
+            height: 60px;
+            width: 66vw;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            background-color: #d61d1d;
+            padding: 20px;
+            width: calc(66vw - 40px);
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: 1s;
+            &:hover {
+                background-color: white;
+                color:#d61d1d;
+            }
+
+        } //a end
+    } //newsletter end
+
+    .social-media {
+        padding-top: 35px;
+
+        img {
+            margin-top: 30px;
+            height: 60px;
+        }
+    }
+
+} // footer end
+
+// footer section end
+
+
+@media only screen and (min-width: 1100px) {
+    footer {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .company, .newsletter, .social-media {
+                padding-top: 55px;
+            }
+            .newsletter {
+                input {
+                    max-width: 400px;
+                }
+                a {
+                    max-width: 360px;
+                }
+            }
+
+        } // container end
+    } // footer end
+} // mq 1000px end
