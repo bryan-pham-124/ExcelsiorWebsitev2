@@ -1,0 +1,469 @@
+
+
+.main-splash {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/webaliser-_TPTXZd9mOo-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        text-align: center;
+        .splash-text {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+    
+        a { 
+            padding: 30px;
+            background-color: #d61d1d;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            transition: 1s;
+            font-size: 25px;
+            border-radius: 20px;
+            &:hover {
+                background-color: white;
+                color: #df2a0a;
+            }   
+        }
+    } // container end
+    
+} // main-splash end
+
+
+
+// edge section
+.edge {
+    text-align: center;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    .header {
+        font-size: 50px;
+        font-weight: bold;
+        color: #BD491F;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+    .card {
+        
+        max-width: 350px;
+        border-radius: 30px;
+        padding: 40px;  
+        background-color:#222222;
+        margin-bottom: 30px;
+        img {
+            height: 150px;
+            margin-bottom: 30px;
+        }
+
+        .card-header {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            padding-bottom: 30px;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .card-text {
+            color: white;
+            line-height: 2;
+        }
+    } // card end
+} //edge end
+
+@media only screen and (min-width: 1250px) {
+    .edge {
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+             
+            grid-gap: 2rem;
+            .header {
+                grid-column: span 3;
+                margin-bottom: 40px;
+            }
+
+            .card {
+                max-width: 230px;
+                grid-column: span 1;
+               
+            }
+            
+
+          
+        } // container end
+    } // edge end
+} // mq 1000px end
+
+//edge section
+
+
+
+//success section
+.success {
+
+    background-color: #BD491F;
+    color: white;
+    line-height: 2;
+    
+    .header {
+        font-weight: bold;
+        font-size: 45px;
+        background-color: #222222;
+        color: white;
+        padding: auto 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+    .text-section {
+        margin-bottom: 100px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 500px;
+
+        .explore {
+           text-decoration: none;
+           background-color: white;
+           color: #222222;
+           font-size: 28px;
+           padding: 30px;
+           transition: 1s;
+           margin-bottom:  0px;
+           &:hover {
+               
+                background-color: #222222;
+                color: white;
+           }
+        }
+        .text {
+            margin-bottom: 20px;
+            font-size: 25px;
+            color: rgb(230, 230, 230);
+            padding: 30px;
+        }
+    
+    } // text section end
+    
+    .img-section {
+        margin-top: 80px;
+        height: 330px;
+        background: url(../img/avi-werde-hHz4yrvxwlA-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} // success end
+
+@media only screen and (min-width: 1000px) {
+    .success {
+
+       
+        .text-section .text {
+            padding: 69px;
+            padding-top: 30px;
+            margin-bottom: 0px;
+        }
+
+        .text-section .explore {
+           
+            margin-bottom: 30px;
+           
+        }
+
+        .img-section {
+            height: 450px;
+        }
+       
+    } // success end
+} // mq 1000px
+@media only screen and (min-width: 1250px) {
+    .success {
+      
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+              
+        } 
+
+        .text-section {
+            height: 480px;
+            grid-column: span 1;
+            display: block;         
+            .header {
+                padding: 40px;
+                margin-bottom: 50px;
+                font-size: 50px;
+            }
+        } //txt section end
+
+        .img-section {
+            margin-top: 0px;
+            height: 590px;
+            grid-column: span 1;
+            background-size: inherit, inherit;
+        }
+
+    } //  success end
+} // mq 1000px end
+
+//success section end
+
+
+
+// Testimonials 
+
+.testimonials {
+    margin-bottom: 100px;
+    text-align: center;
+    .mini-container {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .header {
+        text-align: center;
+        font-weight: bold;
+        color:#BD491F;
+        font-size: 50px;
+        padding: 30px;
+    }
+    .testimonial {
+       margin-bottom: 100px;
+        img {
+            height: 350px;
+            width: 100%;
+            max-width: 500px;
+        }
+        p {
+            text-align: center;
+            line-height: 2;
+            font-size: 20px;
+            padding: 20px 40px;
+            padding-bottom: 20px;
+        }
+
+        span {
+            color:#ee4d31;
+            font-size: 35px;
+            font-weight: bold;
+        }
+    } // testimonial end
+
+    .consult {
+        text-decoration: none;
+        background-color: #d61d1d;
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+        color: white;
+        transition: 1s; 
+        
+        &:hover{
+            background-color:#222222;
+        }
+    }
+
+} //testimonials end
+
+
+
+@media only screen and (min-width: 1100px) {
+    .testimonials {
+        .container {
+            .testimonial .mini-container {
+                
+                padding-left: 0px !important;
+                p {
+                    padding: 20px 100px;
+                }
+            }
+            .consult {
+                text-decoration: none;
+                background-color: #d61d1d;
+                font-size: 40px;
+                &:hover{
+                    background-color:#222222;
+                }
+            }
+        }
+    } //testimonials end
+} // mq 1000px end
+
+
+
+@media only screen and (min-width: 1250px) {
+    .testimonials {
+        .container { 
+       
+            .header {
+                font-size: 70px;
+                padding: 70px;    
+            }
+          
+            .testimonial .mini-container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                ". img txt ." // center using grid - "Modern problems require solutions." - Dave Chapellle
+                ;
+                margin-bottom: 50px;
+                .img {
+                    grid-area: img;
+                    padding-left: 1rem;
+                   
+                    img {
+                        min-width: 350px !important;
+                        height: 275px;
+                    }
+                }
+                .text {
+                    grid-area: txt;
+                    font-style: italic;
+                    display: flex;
+                    align-items: center;
+                    background-color: #222222;
+                    padding: 0px 0px;
+                    width:  700px;
+                
+                    p {
+                        grid-column: span 2;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+                        color: white;   
+                        margin-bottom: 0px;
+                        span {
+                            display:  block;
+                            text-align: left;
+                        }
+                    }   
+                } // text end
+            } // testimonial end
+
+            .testimonial #t2 {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                ". txt img  ." 
+                ;
+            }
+
+          
+        } // container end
+    } //testimonials end
+} // mq 1250px
+// Testimonials Section End
+
+
+// footer section
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    .header{
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .company {
+        padding-top: 35px;
+        
+        ul {
+            padding: 0px;
+            margin: 20px;
+            list-style-type: none;
+            li {
+                padding: 20px 40px;
+                a {
+                    text-decoration: none;
+                    color: rgb(206, 206, 206);
+                    transition: 1s;
+                    padding: 20px 40px;
+                    &:hover {
+                        background-color: #BD491F;
+                    }
+                }
+            } // li end
+        } // ul end
+    } // company end
+
+    .newsletter {
+        input {
+            margin-top: 40px;
+            border: none;
+            height: 60px;
+            width: 66vw;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            background-color: #d61d1d;
+            padding: 20px;
+            width: calc(66vw - 40px);
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: 1s;
+            &:hover {
+                background-color: white;
+                color:#d61d1d;
+            }
+
+        } //a end
+    } //newsletter end
+
+    .social-media {
+        padding-top: 35px;
+
+        img {
+            margin-top: 30px;
+            height: 60px;
+        }
+    }
+
+} // footer end
+
+// footer section end
+
+
+@media only screen and (min-width: 1100px) {
+    footer {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .company, .newsletter, .social-media {
+                padding-top: 105px;
+            }
+            .newsletter {
+                input {
+                    max-width: 400px;
+                }
+                a {
+                    max-width: 360px;
+                }
+            }
+
+        } // container end
+    } // footer end
+} // mq 1000px end
+
