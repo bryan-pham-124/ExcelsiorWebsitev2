@@ -84,7 +84,16 @@
   font-size: 20px;
 }
 
+.planning .container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "p2" "p1" !important;
+}
+
 .planning .img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: p2;
   background: url(../img/thepowercouple-FAhAg0aT6ro-unsplash.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -92,6 +101,9 @@
 }
 
 .planning .description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: p1;
   background-color: white;
 }
 
@@ -123,6 +135,9 @@
 }
 
 @media only screen and (min-width: 1250px) {
+  .planning .container {
+        grid-template-areas: "p1 p2" !important;
+  }
   .permit .img, .planning .img, .construction .img {
     height: 600px;
   }

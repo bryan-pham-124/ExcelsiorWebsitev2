@@ -53,6 +53,8 @@
 //permit, planning sections 
 
 .permit, .planning, .construction {
+ 
+
     .img {
         background: url(../img/scott-graham-OQMZwNd3ThU-unsplash.jpg);
         background-position: center;
@@ -87,14 +89,21 @@
 } // permit, planning  end
 
 .planning {
+
+    .container {
+        display: grid;  
+        grid-template-areas: "p2" "p1" !important;
+    }
     .img {
-        
+        grid-area: p2;
         background: url(../img/thepowercouple-FAhAg0aT6ro-unsplash.jpg);
         background-size: 100% 100%;
         background-attachment: fixed;
         height: 400px;
+     
     }
     .description {
+        grid-area: p1;
         background-color: white;
         .header {
             color: #BD491F;
@@ -127,6 +136,10 @@
 
 
 @media only screen and (min-width: 1250px) {
+
+    .planning .container {
+        grid-template-areas: "p1 p2" !important;
+    }
     .permit, .planning, .construction {
         .img {
             height: 600px;
@@ -134,8 +147,7 @@
         .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            
-          
+
             .description {
               display: flex;
               justify-content: center;
