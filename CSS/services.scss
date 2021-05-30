@@ -1,0 +1,191 @@
+// banner and text section 
+
+.banner {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+     rgba(0, 0, 0, 0.8)), url(../img/aaron-huber-G7sE2S4Lab4-unsplash.jpg); //img from Aaron Huber
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+        color: white;
+        font-size: 60px;
+    }
+} // banner end
+
+
+.text-section {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-section, .description p {
+    font-size: 25px;
+    line-height: 2;
+    padding: 0px 40px;
+}
+
+
+@media only screen and (min-width: 1250px) {
+
+    .text-section {
+        height: 300px;
+    }
+    .text-section p{
+        max-width: 66vw;
+        text-align: center;
+    } 
+} // mq 1250px end
+
+
+// banner and text section  end
+
+
+
+//permit, planning sections 
+
+.permit, .planning, .construction {
+    .img {
+        background: url(../img/scott-graham-OQMZwNd3ThU-unsplash.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        height: 400px;
+    }
+    
+    .description {
+        background-color: #222222;
+        text-align: center;
+        padding: 40px;
+     
+        img {
+            margin-top: 30px;
+            height: 200px;
+             
+        }
+        .header {
+            margin: 0px;
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        P {
+            margin-top: 40px;
+            color: rgb(206, 206, 206);
+            font-size: 20px;
+        }
+    }
+} // permit, planning  end
+
+.planning {
+    .img {
+        
+        background: url(../img/thepowercouple-FAhAg0aT6ro-unsplash.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        height: 400px;
+    }
+    .description {
+        background-color: white;
+        .header {
+            color: #BD491F;
+        }
+        p {
+            color: #424242;
+        }
+    }
+} // planning end
+
+.construction  {
+    .img {
+        background: 
+           url(../img/scott-webb-_K-QKkbn7Ds-unsplash.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        height: 400px;
+    }
+    .description {
+        background-color: #BD491F;
+        .header {
+            color: white;
+        }
+        p {
+            color: rgb(233, 233, 233);
+        }
+    }
+} // planning end
+
+
+
+@media only screen and (min-width: 1250px) {
+    .permit, .planning, .construction {
+        .img {
+            height: 600px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+          
+            .description {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-left: 80px ;
+              img {
+                padding-right: 30px;
+              }
+
+              .header, p {
+                  padding-left: 0px;
+                  max-width: 550px;
+              }
+              p {
+                  font-size: 20px;
+              }
+            }  
+        } // container end
+    } // description end
+} // mq 1250px end
+
+//permit section end
+
+
+
+
+//contact btn section
+
+.contact-btn {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .header {
+        font-size: 40px;
+    }
+    a {
+        display: inline-block;
+        margin-top: 40px;
+        text-decoration: none;
+        background-color: #d61d1d;
+        padding: 40px 120px;
+        color: white;
+        font-size: 30px;
+        transition: 1s;
+        &:hover {
+            background-color: #222222;
+        }
+    }
+} //concept btn end
+
+//contact btn section end
