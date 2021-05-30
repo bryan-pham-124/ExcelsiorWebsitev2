@@ -303,7 +303,6 @@
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: img;
-    padding-left: 1rem;
   }
   .testimonials .container .testimonial .mini-container .img img {
     min-width: 350px !important;
