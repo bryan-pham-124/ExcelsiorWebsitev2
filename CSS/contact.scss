@@ -1,0 +1,110 @@
+
+
+   $width-mobile: 320px;
+//contact section
+.contact {
+    
+    margin-top: 250px;
+    margin-bottom: 250px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        .header {
+            background-color: #222222;
+            padding:  30px 60px ;
+            h1 {
+                font-size: 50px;
+                color: white;
+            }
+            p {
+                font-style: italic;
+                color: white;
+            }
+        } // header end
+        
+        .form-section {
+            padding: 60px;
+            padding-top: 20px;
+            background-color: #BD491F;
+            color: white;
+            
+            p {
+                font-size: 24px;
+            }
+            input {
+                background-color: #BD491F;
+                width: $width-mobile;
+                border: none;
+                border-bottom: 4px solid #222222 ;
+                height: 40px;
+                font-size: 24px;
+                
+                &:focus {
+                    outline: none;
+                    background-color: white;
+                }
+            }
+
+            #details {
+                margin-top: 50px;
+                display: block;
+                width: $width-mobile;
+                font-size: 20px;
+                height: 120px;
+                padding: 20px;
+            }
+            
+            .mini-container {
+                text-align: center;
+                margin-top: 100px;
+            }
+            .submit {
+                 
+                text-decoration: none;
+                padding: 40px;
+                font-size: 30px;
+                background-color: #222222;
+                color: white;
+                transition: 1s;
+
+                &:hover {
+                    background-color: white;
+                    color: #222222;
+                }
+            }
+        } // form-section end
+    }
+   
+} // contact end
+
+//contact section end
+
+
+@media only screen and (min-width: 750px) {
+    $width: 600px;
+    .contact {
+        .container {
+            height: auto;
+            .form-section {
+               
+                p {
+                    width:  $width;
+                }
+                input {
+               
+                    width:  $width;
+                }
+    
+                #details {
+       
+                    width:  $width;
+           
+                }
+            } // form-section end
+        } // container end
+       
+    } // contact end
+   
+} // mq 1250px end

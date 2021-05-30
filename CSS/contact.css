@@ -1,0 +1,99 @@
+.contact {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .header {
+  background-color: #222222;
+  padding: 30px 60px;
+}
+
+.contact .container .header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.contact .container .header p {
+  font-style: italic;
+  color: white;
+}
+
+.contact .container .form-section {
+  padding: 60px;
+  padding-top: 20px;
+  background-color: #BD491F;
+  color: white;
+}
+
+.contact .container .form-section p {
+  font-size: 24px;
+}
+
+.contact .container .form-section input {
+  background-color: #BD491F;
+  width: 320px;
+  border: none;
+  border-bottom: 4px solid #222222;
+  height: 40px;
+  font-size: 24px;
+}
+
+.contact .container .form-section input:focus {
+  outline: none;
+  background-color: white;
+}
+
+.contact .container .form-section #details {
+  margin-top: 50px;
+  display: block;
+  width: 320px;
+  font-size: 20px;
+  height: 120px;
+  padding: 20px;
+}
+
+.contact .container .form-section .mini-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact .container .form-section .submit {
+  text-decoration: none;
+  padding: 40px;
+  font-size: 30px;
+  background-color: #222222;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contact .container .form-section .submit:hover {
+  background-color: white;
+  color: #222222;
+}
+
+@media only screen and (min-width: 750px) {
+  .contact .container {
+    height: auto;
+  }
+  .contact .container .form-section p {
+    width: 600px;
+  }
+  .contact .container .form-section input {
+    width: 600px;
+  }
+  .contact .container .form-section #details {
+    width: 600px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
