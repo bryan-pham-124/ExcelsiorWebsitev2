@@ -1,0 +1,121 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.portfolio-header {
+    
+    text-align: center; 
+    background-color: #222222;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    h1 {
+        font-size: 40px;
+        color: white;
+    }
+    p {
+        font-size: 20px;
+        color: rgb(216, 216, 216);
+    }
+}
+
+
+// img gallry 
+.img-gallery {
+     padding: 0px 40px;
+     margin-bottom: 40px;
+    .mini-container {
+        position: relative; /// NEED THIS FOR OVERLAY TO WORK
+    }
+    a {
+        img {
+            display: block;
+            height: 400px;
+            width: 100%;
+            margin-bottom: 30px;
+             
+        }
+
+        .mini-container  .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #BD491F;
+        }
+
+        .mini-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-text {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            font-style: bold;
+
+            span {
+                margin-top: 40px;
+            }
+
+        }
+
+ 
+    } // a end
+  
+} // img-gallery end
+
+
+
+@media only screen and (min-width: 1250px) {
+
+
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: ". img1 img1 img2 img2 ." ". img3 img3 img4 img4 .";
+        grid-gap: 1rem;
+        a img {
+            
+            height: 500px;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+    }
+    
+    #img1 {
+        grid-area: img1;
+        
+    }
+    #img2 {
+        grid-area: img2;
+    }
+    #img3 {
+        grid-area: img3;
+    }
+    #img4 {
+        grid-area: img4;
+    }
+} // mq 1250px end
+
+
+
+
+
+
+//img-gallery section end
