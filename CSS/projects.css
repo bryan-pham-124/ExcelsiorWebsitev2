@@ -27,7 +27,7 @@ body {
   margin-top: 60px;
   font-size: 35px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .project .project-info .entry {
@@ -37,20 +37,21 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
 }
 
 .project .project-info .entry h1 {
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-bottom: 3px solid #BD491F;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   width: 300px;
   font-size: 25px;
 }
 
 .project .project-info .entry .info {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   width: 300px;
 }
 
@@ -59,13 +60,38 @@ body {
     padding-left: 40px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+  .project .container .img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/ span 3;
   }
   .project .container .img img {
     height: 600px;
     max-height: 600px;
     width: 100%;
+  }
+  .project .project-info .header {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+  }
+  .project .project-info .entry {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 100px;
+  }
+  .project .project-info .entry h1 {
+    font-size: 30px;
+  }
+  .project .project-info .entry .info {
+    font-size: 20px;
+    margin-bottom: 35px;
   }
 }
 
@@ -77,6 +103,7 @@ body {
 }
 
 .testimonials .header {
+  margin-top: 30px;
   font-size: 40px;
   text-align: center;
   font-weight: bold;

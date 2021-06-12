@@ -244,7 +244,7 @@
   line-height: 2;
   font-size: 20px;
   padding: 20px 40px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .testimonials .testimonial span {
@@ -278,7 +278,8 @@
   .testimonials .container .consult {
     text-decoration: none;
     background-color: #d61d1d;
-    font-size: 40px;
+    font-size: 30px;
+    padding: 30px 60px;
   }
   .testimonials .container .consult:hover {
     background-color: #222222;
@@ -287,7 +288,7 @@
 
 @media only screen and (min-width: 1250px) {
   .testimonials .container .header {
-    font-size: 70px;
+    font-size: 55px;
     padding: 70px;
   }
   .testimonials .container .testimonial .mini-container {

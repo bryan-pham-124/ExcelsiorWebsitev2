@@ -127,13 +127,13 @@ footer .newsletter input {
   width: 66vw;
   margin-bottom: 20px;
   font-size: 25px;
-  padding-left: 30px;
+  text-align: center;
 }
 
 footer .newsletter a {
   display: inline-block;
   background-color: #d61d1d;
-  padding: 20px;
+  padding: 20px 23px;
   width: calc(66vw - 40px);
   color: white;
   font-size: 20px;

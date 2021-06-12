@@ -4,7 +4,7 @@
 // banner 
 
 .banner {
-    height: 500px;
+    height: 350px;
     background: linear-gradient(rgba(0, 0, 0, 0.8),
      rgba(0, 0, 0, 0.8)), url(../img/pop-zebra-wp81DxKUd1E-unsplash.jpg); //img fomr pop zebra
     background-position: center;
@@ -26,13 +26,13 @@
 
 .header {
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
 
 .intro, .how {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
     display:  flex;
     justify-content: center;
@@ -52,6 +52,14 @@
         color: #BD491F;
     }
 } // intro end
+
+#firstElm {
+    margin-top: 80px;
+}
+
+#lastElm {
+    margin-bottom: 100px;
+}
 
  
 

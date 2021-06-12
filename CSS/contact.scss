@@ -85,6 +85,7 @@
 @media only screen and (min-width: 750px) {
     $width: 600px;
     .contact {
+        
         .container {
             height: auto;
             .form-section {
@@ -107,4 +108,11 @@
        
     } // contact end
    
-} // mq 1250px end
+} // mq 750px end
+
+@media only screen and (min-width: 1550px) {
+    .contact {
+        margin-top: 300px;
+        margin-bottom: 300px;
+    }
+}
