@@ -19,7 +19,7 @@
 
 
 .text-section {
-    height: 100px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
 }
 
 .text-section, .description p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 2;
     padding: 0px 40px;
 }
@@ -138,6 +138,8 @@
     .planning .container {
         grid-template-areas: "p1 p2" !important;
     }
+ 
+
     .permit, .planning, .construction {
         .img {
             height: 600px;
