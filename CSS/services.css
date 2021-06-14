@@ -53,7 +53,6 @@
 .permit .img, .planning .img, .construction .img {
   background: url(../img/scott-graham-OQMZwNd3ThU-unsplash-1.jpg);
   background-position: center;
-  background-attachment: fixed;
   background-size: 100% 100%;
   height: 400px;
 }
@@ -92,10 +91,10 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: p2;
-  background: url(../img/thepowercouple-FAhAg0aT6ro-unsplash-1.jpg);
+  background: url(../img/sven-mieke-fteR0e2BzKo-unsplash.jpg);
   background-size: 100% 100%;
-  background-attachment: fixed;
   height: 400px;
+  background-position: center;
 }
 
 .planning .description {
@@ -114,10 +113,10 @@
 }
 
 .construction .img {
-  background: url(../img/scott-webb-_K-QKkbn7Ds-unsplash-1.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background: url(../img/c-dustin-91AQt9p4Mo8-unsplash.jpg);
+  background-size: cover;
   height: 400px;
+  background-position: center;
 }
 
 .construction .description {
