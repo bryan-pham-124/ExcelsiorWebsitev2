@@ -1,5 +1,9 @@
 
-
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
 
 body {
     margin: 0px;
@@ -34,7 +38,7 @@ body {
     text-align: center;
     padding: 30px 30px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: $body-font-size;
     transition: 1s;
     
 }
@@ -101,6 +105,7 @@ footer {
         text-align: center;
         font-weight: bold;
         font-size: 30px;
+        text-transform: uppercase;
     }
 
     .company {
@@ -117,6 +122,7 @@ footer {
                     color: rgb(206, 206, 206);
                     transition: 1s;
                     padding: 10px 40px;
+                    text-transform: uppercase;
                     &:hover {
                         background-color: #BD491F;
                     }
@@ -137,16 +143,17 @@ footer {
         }
         a {
             display: inline-block;
-            background-color: #d61d1d;
+            background-color: #BD491F;
             padding: 20px 23px;
             width: calc(66vw - 40px);
             color: white;
-            font-size: 20px;
+            font-size: $btn-font-size;
             text-decoration: none;
             transition: 1s;
+            text-transform: uppercase;
             &:hover {
                 background-color: white;
-                color:#d61d1d;
+                color: #BD491F;
             }
 
         } //a end
@@ -157,7 +164,7 @@ footer {
 
         img {
             margin-top: 30px;
-            height: 60px;
+            height: 40px;
         }
     }
 

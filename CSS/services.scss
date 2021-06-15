@@ -1,9 +1,16 @@
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
+
+
 // banner and text section 
 
 .banner {
     height: 350px;
     background: linear-gradient(rgba(0, 0, 0, 0.8),
-     rgba(0, 0, 0, 0.8)), url(../img/aaron-huber-G7sE2S4Lab4-unsplash.jpg); //img from Aaron Huber
+     rgba(0, 0, 0, 0.8)), url(../img/tinified/aaron-huber-G7sE2S4Lab4-unsplash.jpg); //img from Aaron Huber
     background-position: center;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -13,7 +20,8 @@
 
     .text {
         color: white;
-        font-size: 60px;
+        font-size: 55px;
+        text-transform: uppercase;
     }
 } // banner end
 
@@ -23,13 +31,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     
+    padding: 30px;
 }
 
 .text-section, .description p {
-    font-size: 20px;
-    line-height: 2;
-    padding: 0px 40px;
+    font-size: $sub-title-font-size;
+    line-height: 1.75;
+    padding: 20px 40px;
 }
 
 
@@ -54,7 +62,7 @@
 .permit, .planning, .construction {
  
     .img {
-        background: url(../img/scott-graham-OQMZwNd3ThU-unsplash-1.jpg);
+        background: url(../img/tinified/scott-graham-OQMZwNd3ThU-unsplash.jpg);
         background-position: center;
         background-size: 100% 100%;
         height: 400px;
@@ -73,13 +81,14 @@
         .header {
             margin: 0px;
             color: white;
-            font-size: 45px;
+            font-size: $title-font-size;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         P {
             margin-top: 40px;
-            color: rgb(206, 206, 206);
+            color: white;
             font-size: 20px;
         }
     }
@@ -93,7 +102,7 @@
     }
     .img {
         grid-area: p2;
-        background: url(../img/sven-mieke-fteR0e2BzKo-unsplash.jpg);
+        background: url(../img/tinified/sven-mieke-fteR0e2BzKo-unsplash.jpg);
         background-size: 100% 100%;
         height: 400px;
         background-position: center;
@@ -106,7 +115,7 @@
             color: #BD491F;
         }
         p {
-            color: #424242;
+            color: #BD491F;
         }
     }
 } // planning end
@@ -114,7 +123,7 @@
 .construction  {
     .img {
         background: 
-           url(../img/c-dustin-91AQt9p4Mo8-unsplash.jpg);
+           url(../img/tinified/c-dustin-91AQt9p4Mo8-unsplash.jpg);
         background-size: cover;
         height: 400px;
         background-position: center;
@@ -125,7 +134,7 @@
             color: white;
         }
         p {
-            color: rgb(233, 233, 233);
+            color: white;
         }
     }
 } // planning end
@@ -182,14 +191,14 @@
     align-items: center;
     text-align: center;
     .header {
-        font-size: 40px;
+        font-size: $title-font-size;
     }
     a {
         display: inline-block;
         margin-top: 40px;
         text-decoration: none;
-        background-color: #d61d1d;
-        padding: 35px 70px;
+        background-color: #BD491F;
+        padding: $btn-padding;
         color: white;
         font-size: 30px;
         transition: 1s;

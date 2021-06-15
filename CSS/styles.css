@@ -1,7 +1,7 @@
 .main-splash {
   height: 500px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/webaliser-_TPTXZd9mOo-unsplash.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/webaliser-_TPTXZd9mOo-unsplash.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/tinified/webaliser-_TPTXZd9mOo-unsplash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/tinified/webaliser-_TPTXZd9mOo-unsplash.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: 100% 140%;
@@ -22,27 +22,27 @@
 
 .main-splash .container .splash-text {
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 100px;
 }
 
 .main-splash .container a {
-  padding: 30px;
-  background-color: #d61d1d;
+  padding: 23px 32px;
+  background-color: #BD491F;
   color: white;
   text-align: center;
   text-decoration: none;
   -webkit-transition: 1s;
   transition: 1s;
-  font-size: 25px;
-  border-radius: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .main-splash .container a:hover {
   background-color: white;
-  color: #df2a0a;
+  color: #BD491F;
 }
 
 .edge {
@@ -58,7 +58,8 @@
 }
 
 .edge .header {
-  font-size: 50px;
+  font-size: 45px;
+  text-transform: uppercase;
   font-weight: bold;
   color: #BD491F;
   margin-bottom: 70px;
@@ -68,7 +69,7 @@
 .edge .card {
   max-width: 350px;
   border-radius: 30px;
-  padding: 40px;
+  padding: 25px 32px;
   background-color: #222222;
   margin-bottom: 30px;
 }
@@ -79,10 +80,10 @@
 }
 
 .edge .card .card-header {
-  margin-bottom: 30px;
-  font-size: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
   font-weight: bold;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   border-bottom: 2px solid white;
   color: white;
 }
@@ -90,6 +91,8 @@
 .edge .card .card-text {
   color: white;
   line-height: 2;
+  font-size: 16px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 1250px) {
@@ -145,8 +148,8 @@
   text-decoration: none;
   background-color: white;
   color: #222222;
-  font-size: 28px;
-  padding: 30px;
+  font-size: 18px;
+  padding: 23px 32px;
   -webkit-transition: 1s;
   transition: 1s;
   margin-bottom: 0px;
@@ -162,12 +165,13 @@
   font-size: 25px;
   color: #e6e6e6;
   padding: 30px;
+  font-weight: bold;
 }
 
 .success .img-section {
   margin-top: 80px;
   height: 330px;
-  background: url(../img/avi-werde-hHz4yrvxwlA-unsplash.jpg);
+  background: url(../img/tinified/avi-werde-hHz4yrvxwlA-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -221,6 +225,10 @@
   text-align: center;
 }
 
+.testimonials .mini-container .text {
+  font-size: 16px;
+}
+
 .testimonials .header {
   text-align: center;
   font-weight: bold;
@@ -242,23 +250,23 @@
 .testimonials .testimonial p {
   text-align: center;
   line-height: 2;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px 40px;
   padding-bottom: 0px;
 }
 
 .testimonials .testimonial span {
-  color: #ee4d31;
+  color: #BD491F;
   font-size: 35px;
   font-weight: bold;
 }
 
 .testimonials .consult {
   text-decoration: none;
-  background-color: #d61d1d;
+  background-color: #BD491F;
   text-align: center;
-  padding: 30px;
-  font-size: 20px;
+  padding: 23px 32px;
+  font-size: 16px;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
@@ -276,10 +284,8 @@
     padding: 20px 100px;
   }
   .testimonials .container .consult {
-    text-decoration: none;
-    background-color: #d61d1d;
-    font-size: 30px;
-    padding: 30px 60px;
+    font-size: 25px;
+    padding: 30px 50px;
   }
   .testimonials .container .consult:hover {
     background-color: #222222;
@@ -306,14 +312,13 @@
     grid-area: img;
   }
   .testimonials .container .testimonial .mini-container .img img {
-    min-width: 350px !important;
-    height: 275px;
+    min-width: 450px !important;
+    height: 300px;
   }
   .testimonials .container .testimonial .mini-container .text {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: txt;
-    font-style: italic;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -326,7 +331,6 @@
   }
   .testimonials .container .testimonial .mini-container .text p {
     grid-column: span 2;
-    font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

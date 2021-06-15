@@ -1,4 +1,11 @@
 
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -8,16 +15,17 @@ body {
     
     text-align: center; 
     background-color: #222222;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 10px;
     margin-bottom: 30px;
     h1 {
-        font-size: 40px;
+        font-size: $title-font-size;
         color: white;
+        text-transform: uppercase;
     }
     p {
-        font-size: 20px;
-        color: rgb(216, 216, 216);
+        font-size: $sub-title-font-size;
+        color: rgb(209, 209, 209);
+     
     }
 }
 
@@ -57,7 +65,8 @@ body {
 
         .overlay-text {
             color: white;
-            font-size: 40px;
+            font-size: $title-font-size;
+            text-transform: uppercase;
             position: absolute;
             top: 50%;
             left: 50%;

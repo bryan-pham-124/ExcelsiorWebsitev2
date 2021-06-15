@@ -19,12 +19,13 @@
 }
 
 .contact .container .header h1 {
-  font-size: 50px;
+  font-size: 45px;
+  text-transform: uppercase;
   color: white;
 }
 
 .contact .container .header p {
-  font-style: italic;
+  font-size: 16px;
   color: white;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .contact .container .form-section p {
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .contact .container .form-section input {
@@ -69,8 +70,8 @@
 
 .contact .container .form-section .submit {
   text-decoration: none;
-  padding: 40px;
-  font-size: 30px;
+  padding: 26px 60px;
+  font-size: 23px;
   background-color: #222222;
   color: white;
   -webkit-transition: 1s;

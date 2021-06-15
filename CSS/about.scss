@@ -1,4 +1,9 @@
 
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
 
 
 // banner 
@@ -21,11 +26,11 @@
 } // banner end
 
 
-// text section 
+// text section
 
 
-.header {
-    font-size: 40px;
+.header-intro {
+    font-size: $sub-title-font-size;
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -43,7 +48,7 @@
     max-width: 1200px;
     padding: 0px 40px;
     line-height: 2;
-    font-size: 20px;
+    font-size: $body-font-size;
 }
 
 .intro {
@@ -54,7 +59,7 @@
 } // intro end
 
 #firstElm {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #lastElm {

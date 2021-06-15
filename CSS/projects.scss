@@ -1,3 +1,8 @@
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
 
 
 body {
@@ -19,8 +24,9 @@ body {
         }
         .title {
             margin-top: 0px;
-            font-size: 30px;
+            font-size: $title-font-size;
             font-weight: bold;
+            text-transform: uppercase;
             background-color: #222222;
             color: white;
             padding: 30px;
@@ -33,7 +39,7 @@ body {
     
         .header {
             margin-top: 60px;
-            font-size: 35px;
+            font-size: $sub-title-font-size;
             font-weight: bold;
             margin-bottom: 60px;
             
@@ -50,11 +56,11 @@ body {
                 border-bottom: 3px solid #BD491F;
                 padding-bottom: 15px;
                 width: 300px;
-                font-size: 25px;
+                font-size: $sub-title-font-size;
             }
         
             .info {
-                font-size: 18px;
+                font-size: $body-font-size;
                 margin-bottom: 50px;
                 width: 300px;
             }
@@ -128,15 +134,16 @@ body {
     padding: 35px;
     .header {
         margin-top: 30px;
-        font-size: 40px;
+        font-size: $title-font-size;
+        text-transform: uppercase;
         text-align: center;
         font-weight: bold;
     }
 
     .testimonial {
-        padding: 30px;
+        padding: 10px 30px;
         line-height: 2;
-        font-size: 20px;
+        font-size: $body-font-size;
         text-align: center;
     }
 }
@@ -145,7 +152,7 @@ body {
 
 @media only screen and (min-width: 1250px) {
     .testimonials .testimonial{
-        font-size: 22px;
+        font-size: $body-font-size;
     }
 } // mq 1250px
 

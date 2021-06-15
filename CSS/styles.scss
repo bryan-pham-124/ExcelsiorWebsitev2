@@ -1,8 +1,15 @@
 
+ 
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
+
 
 .main-splash {
     height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/webaliser-_TPTXZd9mOo-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/tinified/webaliser-_TPTXZd9mOo-unsplash.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: 100% 140%;
@@ -14,24 +21,25 @@
         text-align: center;
         .splash-text {
             color: white;
-            font-size: 40px;
+            font-size: $title-font-size;
             font-weight: bold;
             text-align: center;
             margin-bottom: 100px;
         }
     
         a { 
-            padding: 30px;
-            background-color: #d61d1d;
+            padding: $btn-padding;
+            background-color: #BD491F;
             color: white;
+            
             text-align: center;
             text-decoration: none;
             transition: 1s;
-            font-size: 25px;
-            border-radius: 20px;
+            font-size: $btn-font-size;
+            text-transform: uppercase;
             &:hover {
                 background-color: white;
-                color: #df2a0a;
+                color: #BD491F;
             }   
         }
     } // container end
@@ -48,7 +56,8 @@
     justify-content: center;
     background-color: white;
     .header {
-        font-size: 50px;
+        font-size: $title-font-size;
+        text-transform: uppercase;
         font-weight: bold;
         color: #BD491F;
         margin-bottom: 70px;
@@ -58,7 +67,7 @@
         
         max-width: 350px;
         border-radius: 30px;
-        padding: 40px;  
+        padding: 25px 32px;  
         background-color:#222222;
         margin-bottom: 30px;
         img {
@@ -67,10 +76,11 @@
         }
 
         .card-header {
-            margin-bottom: 30px;
-            font-size: 30px;
+            margin-bottom: 20px;
+            font-size: $sub-title-font-size;
             font-weight: bold;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
+       
             border-bottom: 2px solid white;
             color: white;
         }
@@ -78,6 +88,9 @@
         .card-text {
             color: white;
             line-height: 2;
+            font-size: $body-font-size;
+            padding-bottom: 20px;
+        
         }
     } // card end
 } //edge end
@@ -95,14 +108,13 @@
                 margin-bottom: 40px;
             }
 
+           
             .card {
                 max-width: 230px;
                 grid-column: span 1;
                
             }
             
-
-          
         } // container end
     } // edge end
 } // mq 1000px end
@@ -120,7 +132,7 @@
     
     .header {
         font-weight: bold;
-        font-size: 45px;
+        font-size: $title-font-size;
         background-color: #222222;
         color: white;
         padding: auto 40px;
@@ -141,8 +153,8 @@
            text-decoration: none;
            background-color: white;
            color: #222222;
-           font-size: 28px;
-           padding: 30px;
+           font-size: $btn-font-size;
+           padding: $btn-padding;
            transition: 1s;
            margin-bottom:  0px;
            &:hover {
@@ -153,9 +165,10 @@
         }
         .text {
             margin-bottom: 20px;
-            font-size: 25px;
+            font-size:  $sub-title-font-size;
             color: rgb(230, 230, 230);
             padding: 30px;
+            font-weight: bold;
         }
     
     } // text section end
@@ -163,7 +176,7 @@
     .img-section {
         margin-top: 80px;
         height: 330px;
-        background: url(../img/avi-werde-hHz4yrvxwlA-unsplash.jpg);
+        background: url(../img/tinified/avi-werde-hHz4yrvxwlA-unsplash.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -233,6 +246,9 @@
     .mini-container {
         margin-bottom: 50px;
         text-align: center;
+        .text {
+            font-size: $body-font-size;
+        }
     }
     .header {
         text-align: center;
@@ -251,24 +267,26 @@
         p {
             text-align: center;
             line-height: 2;
-            font-size: 20px;
+            font-size: 18px;
             padding: 20px 40px;
             padding-bottom: 0px;
         }
 
         span {
-            color:#ee4d31;
+            color: #BD491F;
             font-size: 35px;
             font-weight: bold;
         }
+
+       
     } // testimonial end
 
     .consult {
         text-decoration: none;
-        background-color: #d61d1d;
+        background-color: #BD491F;
         text-align: center;
-        padding: 30px;
-        font-size: 20px;
+        padding: $btn-padding;
+        font-size: $body-font-size;
         color: white;
         transition: 1s; 
         
@@ -292,10 +310,9 @@
                 }
             }
             .consult {
-                text-decoration: none;
-                background-color: #d61d1d;
-                font-size: 30px;
-                padding: 30px 60px;
+                
+                font-size: 25px;
+                padding: 30px 50px;
                 &:hover{
                     background-color:#222222;
                 }
@@ -326,13 +343,13 @@
                     grid-area: img;
 
                     img {
-                        min-width: 350px !important;
-                        height: 275px;
+                        min-width: 450px !important;
+                        height: 300px;
                     }
                 }
                 .text {
                     grid-area: txt;
-                    font-style: italic;
+               
                     display: flex;
                     align-items: center;
                     background-color: #222222;
@@ -341,7 +358,7 @@
                 
                     p {
                         grid-column: span 2;
-                        font-size: 20px;
+                       
                         display: flex;
                         align-items: center;
                         color: white;   

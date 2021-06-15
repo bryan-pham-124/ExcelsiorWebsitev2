@@ -16,8 +16,9 @@ body {
 
 .project .img .title {
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
+  text-transform: uppercase;
   background-color: #222222;
   color: white;
   padding: 30px;
@@ -25,7 +26,7 @@ body {
 
 .project .project-info .header {
   margin-top: 60px;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 60px;
 }
@@ -50,7 +51,7 @@ body {
 }
 
 .project .project-info .entry .info {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 50px;
   width: 300px;
 }
@@ -104,21 +105,22 @@ body {
 
 .testimonials .header {
   margin-top: 30px;
-  font-size: 40px;
+  font-size: 45px;
+  text-transform: uppercase;
   text-align: center;
   font-weight: bold;
 }
 
 .testimonials .testimonial {
-  padding: 30px;
+  padding: 10px 30px;
   line-height: 2;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 
 @media only screen and (min-width: 1250px) {
   .testimonials .testimonial {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=projects.css.map */
