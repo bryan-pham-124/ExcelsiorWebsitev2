@@ -1,5 +1,5 @@
 
- 
+ /*
 $title-font-size: 45px;
 $sub-title-font-size: 25px;
 $body-font-size: 16px;
@@ -124,3 +124,127 @@ $width-mobile: 320px;
         margin-bottom: 300px;
     }
 }
+
+*/
+
+
+$title-font-size: 45px;
+$sub-title-font-size: 25px;
+$body-font-size: 16px;
+$btn-font-size: 18px;
+$btn-padding:  23px 32px;
+$width-mobile: 320px;
+
+$margin-form: 50px;
+// form section
+
+.form-container {
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+  
+    padding-bottom: 30px;
+
+    .form {
+        width: 100%;
+        background-color: #BD491F;
+        max-width: 660px;
+        text-align: center;
+    }
+    .form-header {
+        text-align: left;
+        background-color: #222222;
+        padding: 25px 30px;
+        padding-left: $margin-form;
+        color: white;
+        p {
+            font-size: $body-font-size;
+            line-height: 2;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 35px;
+        }
+    } // form-header
+
+    #first-control{
+        margin-top: 30px;
+    }
+
+    .form-control {
+        text-align: left;
+        margin-left: $margin-form;
+        margin-bottom: 30px;
+        color: white;
+       ;
+    }
+
+    .form-control.error small{
+        visibility: visible;
+    }
+
+    label {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    input {
+  
+        display: block;
+        border: none;
+        font-size: 20px;
+        border-bottom: 2px solid #222222;
+        padding-top: 10px;
+        margin-top: 20px;
+
+        width: 90%;
+        background-color: transparent;
+        color: #222222;
+        
+        &:focus {
+            outline: none;
+            background-color: white;
+        }
+
+    }
+
+    small {
+        display: block;
+        margin-top: 10px;
+        color: #f3d3d0;
+        visibility: hidden;
+    }
+
+    
+    textarea {
+        margin-top: 40px;
+        width: 90%;
+        max-width: 90%;
+        height: 200px;
+        font-size: 20px;
+    }
+    
+ 
+
+    button {
+    
+        background-color: #222222;
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        transition: .5s;
+        &:hover {
+            background-color: white;
+            color: #222222;
+        }
+
+    }
+
+} // form end
+
+ 
+// form section end
