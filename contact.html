@@ -51,7 +51,7 @@
     <!-- NAVBAR END -->
 
   
-    <!--contact -->
+    <!--contact 
     <div class="contact">
         <div class="container">
             <div class="header">
@@ -75,7 +75,42 @@
             </div>
         </div>
     </div>
-      <!--contact end-->
+     contact end-->
+
+     <div class="form-container">
+        <form  id="form" class="form">
+            
+            <div class="form-header">
+                <h1>CONTACT US</h1>
+                <P>Make sure to provide a brief description on your project and availability times. (Max 300 characters) </P>
+            </div>
+
+            <div id = "first-control" class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="name"  >
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" >
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="textarea"> Project Details</label>
+                <textarea name="proj-details" id="details"  ></textarea>
+                <small>Error Message</small>
+            </div>
+
+        
+
+            <button type = "submit">Submit</button>
+
+        </form>
+     </div>
+     <script src="scripts/form-validation.js"></script>
+
 
     <footer>
         <div class="container">
