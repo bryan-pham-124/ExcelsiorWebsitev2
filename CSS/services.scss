@@ -32,12 +32,17 @@ $btn-padding:  23px 32px;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    font-size: 20px;
 }
 
 .text-section, .description p {
-    font-size: $sub-title-font-size;
+   
     line-height: 1.75;
     padding: 20px 40px;
+}
+
+.description p {
+    font-size: $sub-title-font-size;
 }
 
 
@@ -146,7 +151,10 @@ $btn-padding:  23px 32px;
     .planning .container {
         grid-template-areas: "p1 p2" !important;
     }
- 
+    
+    .text-section {
+        font-size: 30px;
+    }
 
     .permit, .planning, .construction {
         .img {
