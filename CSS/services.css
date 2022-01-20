@@ -18,7 +18,7 @@
 
 .banner .text {
   color: white;
-  font-size: 55px;
+  font-size: 45px;
   text-transform: uppercase;
 }
 
@@ -47,6 +47,9 @@
 }
 
 @media only screen and (min-width: 1250px) {
+  .banner .text {
+    font-size: 50px;
+  }
   .text-section {
     height: 300px;
   }

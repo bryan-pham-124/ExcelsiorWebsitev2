@@ -20,7 +20,7 @@ $btn-padding:  23px 32px;
 
     .text {
         color: white;
-        font-size: 55px;
+        font-size: 45px;
         text-transform: uppercase;
     }
 } // banner end
@@ -47,6 +47,11 @@ $btn-padding:  23px 32px;
 
 
 @media only screen and (min-width: 1250px) {
+
+
+    .banner .text {
+        font-size: 50px;
+    }
 
     .text-section {
         height: 300px;
